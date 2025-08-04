@@ -4,6 +4,8 @@ This project is a complete from-scratch replication of the original Vision Trans
 
 The implementation is done entirely in Google Colab using PyTorch, with no external ViT libraries. It focuses on rebuilding the ViT-Base configuration while deeply exploring the core architecture and theory behind it.
 
+The notebook is named CLEANED_ViT_From_Scratch.ipynb in the github repository.
+
 Key components in the notebook:
 
 - Manual patch embedding and positional encoding
