@@ -1,55 +1,20 @@
-Overview:
-This project is a faithful reproduction of the Vision Transformer (ViT) architecture described in the original paper "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" (Dosovitskiy et al., 2020). The goal is to learn the internals of the ViT model by implementing it step-by-step using PyTorch, using only the details provided in the paper's Tables and Equations.
+ViT From Scratch – Research Paper Replication (ViT-Base)
 
-Features:
+This project is a complete from-scratch replication of the original Vision Transformer (ViT) architecture introduced in the paper "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" by Dosovitskiy et al.
 
-Implements ViT-Base configuration as described in the paper (Table 1 and Table 3)
+The implementation is done entirely in Google Colab using PyTorch, with no external ViT libraries. It focuses on rebuilding the ViT-Base configuration while deeply exploring the core architecture and theory behind it.
 
-Patch embedding and position encoding
+Key components in the notebook:
 
-Multi-head self-attention (MSA) block
+- Manual patch embedding and positional encoding
 
-Feedforward MLP block with residual connections
+- Full implementation of Transformer Encoder blocks
 
-Layer normalization applied before every block (pre-norm)
+- Construction of the MLP Head for classification
 
-Simple visualizations of the patching process
+- Detailed explanation of the 4 key equations used in the paper
 
-Designed for educational and research use
+- Step-by-step breakdown of how each part maps to the original architecture
 
-File Structure:
+This is a research-focused deep dive, designed to help understand the mechanics of ViT at the lowest level. No inference section or pre-trained weights are included—this is purely about architecture and learning.
 
-vit_model.py — Contains the full implementation of the Vision Transformer
-
-vit_blocks.py — Defines the MSA and MLP blocks
-
-train.py — Script to train the ViT model on a sample image dataset (e.g., CIFAR-10)
-
-utils.py — Contains helper functions such as patching and visualization
-
-notebooks/ — Contains step-by-step Jupyter/Colab notebooks explaining each stage of the model
-
-Requirements:
-
-Python 3.8+
-
-PyTorch
-
-torchvision
-
-matplotlib
-
-numpy
-
-Getting Started:
-To get started, clone this repository, install the requirements, and open the notebooks to walk through the ViT implementation piece by piece.
-
-Why This Project:
-Most ViT tutorials skip over the details of the original paper or use pre-built modules. This project is meant for those who want to deeply understand how ViT works under the hood and replicate each architectural piece from scratch.
-
-Credits:
-Paper: Dosovitskiy et al. (2020) - "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
-Link: https://arxiv.org/abs/2010.11929
-
-License:
-MIT License
